@@ -1,0 +1,5 @@
+<map id="drv95HF_PoolingReading" name="drv95HF_PoolingReading">
+<area shape="rect" id="node2" href="$group__drv__95_h_f___public___functions.html#ga01d628b4bb72e888f4c57446e6b6782b" title="This fucntion recovers a response from 95HF device. " alt="" coords="220,5,420,32"/>
+<area shape="rect" id="node3" href="$group__drv___s_p_i___public___functions.html#gade5e7a0cefd82cb9a7a01238dd1dda85" title="Sends one byte over SPI and recovers a response. " alt="" coords="675,5,827,32"/>
+<area shape="rect" id="node4" href="$group__drv___s_p_i___public___functions.html#gad8508604c9c5c9e124a5557a8beb0834" title="reveive a byte array over SPI " alt="" coords="468,31,627,57"/>
+</map>

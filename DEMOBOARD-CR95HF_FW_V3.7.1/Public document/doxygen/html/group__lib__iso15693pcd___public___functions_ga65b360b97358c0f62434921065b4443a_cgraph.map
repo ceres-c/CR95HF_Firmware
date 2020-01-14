@@ -1,0 +1,3 @@
+<map id="ISO15693_RunInventory16slots" name="ISO15693_RunInventory16slots">
+<area shape="rect" id="node2" href="$group__lib__iso15693pcd___public___functions.html#ga08be2990702f69c3f26b59f29b723a80" title="this function splits inventory response. If the residue of tag response is incorrect the function ret..." alt="" coords="256,5,477,32"/>
+</map>

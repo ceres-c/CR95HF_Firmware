@@ -1,0 +1,5 @@
+<map id="_95HF_Libraries" name="_95HF_Libraries">
+<area shape="rect" id="node1" href="$group____95_h_f___driver.html" title="This folder contains the driver layer of 95HF family (CR95HF, RX95HF, ST95HF) " alt="" coords="177,5,276,32"/>
+<area shape="rect" id="node2" href="$group___p_c_d.html" title="This part of the library enables PCD capabilities of CR95HF &amp; ST95HF. " alt="" coords="202,56,251,83"/>
+<area shape="rect" id="node4" href="$group___config___manager.html" title="This part of the library manage the configuration of the chip. " alt="" coords="169,107,284,133"/>
+</map>

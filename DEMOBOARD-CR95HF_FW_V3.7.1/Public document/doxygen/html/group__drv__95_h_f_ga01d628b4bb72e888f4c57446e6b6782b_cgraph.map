@@ -1,0 +1,4 @@
+<map id="drv95HF_ReceiveSPIResponse" name="drv95HF_ReceiveSPIResponse">
+<area shape="rect" id="node2" href="$group__drv___s_p_i___public___functions.html#gade5e7a0cefd82cb9a7a01238dd1dda85" title="Sends one byte over SPI and recovers a response. " alt="" coords="460,5,612,32"/>
+<area shape="rect" id="node3" href="$group__drv___s_p_i___public___functions.html#gad8508604c9c5c9e124a5557a8beb0834" title="reveive a byte array over SPI " alt="" coords="253,31,412,57"/>
+</map>

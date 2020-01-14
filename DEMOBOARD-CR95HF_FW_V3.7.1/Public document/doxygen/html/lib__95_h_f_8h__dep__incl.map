@@ -1,0 +1,19 @@
+<map id="inc/lib_95HF.h" name="inc/lib_95HF.h">
+<area shape="rect" id="node2" href="$lib___p_c_d_8h.html" title="This file provides set of firmware functions to manages PCD device. " alt="" coords="735,80,836,107"/>
+<area shape="rect" id="node3" href="$lib__iso14443_apcd_8h.html" title="Manage the iso14443A communication. " alt="" coords="255,155,411,181"/>
+<area shape="rect" id="node4" href="$lib__iso7816pcd_8h.html" title="Manage the iso 7816 commands. " alt="" coords="90,229,230,256"/>
+<area shape="rect" id="node8" href="$lib__iso14443_bpcd_8h.html" title="Manage the iso14443B communication. " alt="" coords="451,155,607,181"/>
+<area shape="rect" id="node10" href="$lib__iso15693pcd_8h.html" title="This file provides set of function defined into ISO15693 specification. " alt="" coords="712,155,859,181"/>
+<area shape="rect" id="node11" href="$lib__nfctype5pcd_8h.html" title="Generates the NFC type5 commands. " alt="" coords="617,229,761,256"/>
+<area shape="rect" id="node13" href="$lib__iso18092pcd_8h.html" title="Manage the iso18092 communication. " alt="" coords="883,155,1029,181"/>
+<area shape="rect" id="node16" href="$lib__nfctype1pcd_8h.html" title="Generates the NFC type1 commands. " alt="" coords="1053,155,1197,181"/>
+<area shape="rect" id="node17" href="$lib__nfctype2pcd_8h.html" title="Generates the NFC type2 commands. " alt="" coords="1221,155,1365,181"/>
+<area shape="rect" id="node18" href="$lib___p_c_d_8c.html" title="This file provides set of firmware functions to manages the PCD device device. " alt="" coords="1390,155,1493,181"/>
+<area shape="rect" id="node7" href="$lib__iso14443_apcd_8c.html" title="Manage the iso14443A communication. " alt="" coords="255,229,412,256"/>
+<area shape="rect" id="node5" href="$lib__nfctype4pcd_8h.html" title="Generates the NFC type4 commands. " alt="" coords="5,304,149,331"/>
+<area shape="rect" id="node6" href="$lib__iso7816pcd_8c.html" title="Manage the iso 7816 commands. " alt="" coords="173,304,315,331"/>
+<area shape="rect" id="node9" href="$lib__iso14443_bpcd_8c.html" title="Manage the iso14443B communication. " alt="" coords="436,229,593,256"/>
+<area shape="rect" id="node12" href="$lib__iso15693pcd_8c.html" title="This file provides set of function defined into ISO15693 specification. " alt="" coords="786,229,934,256"/>
+<area shape="rect" id="node14" href="$lib__nfctype3pcd_8h.html" title="Generates the NFC type3 commands. " alt="" coords="959,229,1103,256"/>
+<area shape="rect" id="node15" href="$lib__iso18092pcd_8c.html" title="Manage the iso18092 communication. " alt="" coords="1127,229,1275,256"/>
+</map>

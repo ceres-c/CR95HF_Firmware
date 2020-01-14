@@ -1,0 +1,5 @@
+<map id="ISO14443A_MultiTagHunting" name="ISO14443A_MultiTagHunting">
+<area shape="rect" id="node2" href="$lib__iso15693pcd_8c.html#abfa9cb3f1aa93cec2b6d07beaf6d2355" title="delay_ms" alt="" coords="277,5,356,32"/>
+<area shape="rect" id="node3" href="$group__lib__iso14443_apcd___public___functions.html#ga8ca000de5f59b98d32b9d73630e2484d" title="Checks if a ISO14443A card is in the field. " alt="" coords="241,56,392,83"/>
+<area shape="rect" id="node4" href="$group__lib___p_c_d___public___functions.html#gaae6e459ff198450884c71ef48be42403" title="this function returns PCD_SUCCESSCODE is the reader reply is a succesful code. " alt="" coords="440,56,631,83"/>
+</map>

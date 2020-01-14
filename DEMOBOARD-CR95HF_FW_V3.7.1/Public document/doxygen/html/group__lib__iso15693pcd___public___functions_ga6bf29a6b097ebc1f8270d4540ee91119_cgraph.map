@@ -1,0 +1,18 @@
+<map id="ISO15693_GetUID" name="ISO15693_GetUID">
+<area shape="rect" id="node2" href="$group__lib__iso15693pcd___public___functions.html#ga89303009fa66b9a36056c8743be81141" title="this function selects 15693 protocol accoording to input parameters " alt="" coords="181,144,284,171"/>
+<area shape="rect" id="node17" href="$lib__iso15693pcd_8c.html#abfa9cb3f1aa93cec2b6d07beaf6d2355" title="delay_ms" alt="" coords="193,195,272,221"/>
+<area shape="rect" id="node3" href="$group__lib___p_c_d___public___functions.html#ga81d6143f28a4070d39e195dc14feba0c" title="this function send a ProtocolSeclect command to the PCD device " alt="" coords="357,81,498,108"/>
+<area shape="rect" id="node15" href="$group__lib___p_c_d___public___functions.html#gaf5beb591d9f79c5804a7a391a2aed072" title="this function send a WriteRegister command to the PCD device " alt="" coords="573,157,708,184"/>
+<area shape="rect" id="node16" href="$group__lib___p_c_d___public___functions.html#gaae6e459ff198450884c71ef48be42403" title="this function returns PCD_SUCCESSCODE is the reader reply is a succesful code. " alt="" coords="332,195,523,221"/>
+<area shape="rect" id="node4" href="$group__lib___p_c_d___public___functions.html#ga3e8064d3a167cdaed1b3b2f203ec9947" title="this function send Echo command to the PCD device " alt="" coords="781,56,867,83"/>
+<area shape="rect" id="node5" href="$group__drv__95_h_f.html#ga682ee8d12d03dda684c42802c6917546" title="This function send a command to 95HF device over SPI or UART bus and receive its response. " alt="" coords="949,107,1099,133"/>
+<area shape="rect" id="node12" href="$group__lib___p_c_d___public___functions.html#ga3b89d71c185916761c5acddf7480ac15" title="This function sends POR sequence. It can be use to initialize the PCD device after a POR..." alt="" coords="571,5,711,32"/>
+<area shape="rect" id="node6" href="$group__drv__interrupt___public___functions.html#ga504fb7a85d4a85ff35841d1e9faeeccf" title="This function configures the Extern Interrupt for the IRQ coming from the RF transceiver. " alt="" coords="1175,31,1343,57"/>
+<area shape="rect" id="node7" href="$group__drv__95_h_f___public___functions.html#ga2d2128c673f4e03c27fa0d84f34ff275" title="This function sends a command over SPI bus. " alt="" coords="1165,81,1352,108"/>
+<area shape="rect" id="node10" href="$group__drv__95_h_f___public___functions.html#ga01d628b4bb72e888f4c57446e6b6782b" title="This fucntion recovers a response from 95HF device. " alt="" coords="1159,132,1359,159"/>
+<area shape="rect" id="node11" href="$group__drv__interrupt___public___functions.html#gac14d9f5c9cf258baa9b91ef1efb4889a" title="This function configures the Extern Interrupt for the IRQ coming from the RF transceiver. " alt="" coords="1167,183,1351,209"/>
+<area shape="rect" id="node8" href="$group__drv___s_p_i___public___functions.html#gade5e7a0cefd82cb9a7a01238dd1dda85" title="Sends one byte over SPI and recovers a response. " alt="" coords="1613,107,1765,133"/>
+<area shape="rect" id="node9" href="$group__drv___s_p_i___public___functions.html#gad8508604c9c5c9e124a5557a8beb0834" title="reveive a byte array over SPI " alt="" coords="1407,107,1565,133"/>
+<area shape="rect" id="node13" href="$group__drv__95_h_f.html#gac1a7857b23527d064098b1a7c56c3e0e" title="Send a reset sequence over SPI bus (Reset command ,wait ,negative pulse on IRQin). " alt="" coords="759,5,889,32"/>
+<area shape="rect" id="node14" href="$group__drv__95_h_f___public___functions.html#ga9f26cceada1259ba9c627d0421b100b3" title="Send a negative pulse on IRQin pin. " alt="" coords="937,5,1111,32"/>
+</map>

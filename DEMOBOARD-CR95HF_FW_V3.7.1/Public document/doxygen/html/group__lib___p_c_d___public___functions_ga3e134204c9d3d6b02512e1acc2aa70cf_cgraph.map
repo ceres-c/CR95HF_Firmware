@@ -1,0 +1,5 @@
+<map id="PCD_Idle" name="PCD_Idle">
+<area shape="rect" id="node2" href="$group__drv__95_h_f.html#ga2d2128c673f4e03c27fa0d84f34ff275" title="This function sends a command over SPI bus. " alt="" coords="129,5,316,32"/>
+<area shape="rect" id="node3" href="$group__drv___s_p_i___public___functions.html#gade5e7a0cefd82cb9a7a01238dd1dda85" title="Sends one byte over SPI and recovers a response. " alt="" coords="571,5,723,32"/>
+<area shape="rect" id="node4" href="$group__drv___s_p_i___public___functions.html#gad8508604c9c5c9e124a5557a8beb0834" title="reveive a byte array over SPI " alt="" coords="364,31,523,57"/>
+</map>

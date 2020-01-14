@@ -1,0 +1,4 @@
+<map id="drv95HF_InitilizeSerialInterface" name="drv95HF_InitilizeSerialInterface">
+<area shape="rect" id="node2" href="$group__drv__95_h_f___public___functions.html#ga1aced698b8fdb13d8d340f1af808e661" title="returns the value of interface pin. Low level means UART bus was choose. High level means SPI bus was..." alt="" coords="252,5,448,32"/>
+<area shape="rect" id="node3" href="$group__drv__interrupt___public___functions.html#ga3a6c44c5f680aaea342a110c300b9a51" title="This function configures the Interrupt Output to send interuption to xx95HF. " alt="" coords="296,56,404,83"/>
+</map>

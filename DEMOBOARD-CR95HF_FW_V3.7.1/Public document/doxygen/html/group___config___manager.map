@@ -1,0 +1,4 @@
+<map id="Config_Manager" name="Config_Manager">
+<area shape="rect" id="node1" href="$group____95_h_f___libraries.html" title="This is the library used by the whole 95HF family (RX95HF, CR95HF, ST95HF) &#160;&#160;You will find ISO librar..." alt="" coords="5,5,121,32"/>
+<area shape="rect" id="node2" href="$group___configuration___manager.html" title="This file is used to select a configuration, PICC or PCD or Initiator/Target. " alt="" coords="332,5,487,32"/>
+</map>
