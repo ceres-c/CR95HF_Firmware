@@ -36,6 +36,7 @@
 /* ID definition ------------------------------------------------------------ */
 #define HID_SPI_SEND_CR95HFCMD											0x01
 #define HID_SPI_SEND_DATA														0x02
+#define HID_SPI_ATOMIC_POWER_CYCLE  								0x03
 
 #define HID_SEND_HID_RESPONSE												0x07
 
@@ -45,6 +46,13 @@
 #define HID_OFFSET_CMDCODE													HID_OFFSET + 1
 #define HID_OFFSET_LENGTH														HID_OFFSET + 2
 #define HID_OFFSET_CTRLCODE													HID_OFFSET + 3
+
+/* Offset definitions for atomic global buffers -----------------------------  */
+#define HID_OFFSET_ATOMIC_TIMER1										HID_OFFSET + 1 /* Time between field off and on */
+#define HID_OFFSET_ATOMIC_TIMER2										HID_OFFSET + 3 /* Time between field on and sending command */
+#define HID_OFFSET_ATOMIC_CMDCODE										HID_OFFSET + 5
+#define HID_OFFSET_ATOMIC_LENGTH										HID_OFFSET + 6
+#define HID_OFFSET_ATOMIC_CTRLCODE									HID_OFFSET + 7
 /* Max buffer size for HID communication */
 #define HID_MAX_BUFFER_SIZE													0x40
 
