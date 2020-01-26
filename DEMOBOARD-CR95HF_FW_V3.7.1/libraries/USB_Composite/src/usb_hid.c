@@ -22,7 +22,6 @@
 #include "usb_hid.h"
 
 #include "lib_ConfigManager.h"
-#include "lib_PCD.h" /* To allow turning on and off the field for atomic commands */
 
 /** @addtogroup USB
  * 	@{
@@ -66,10 +65,12 @@ static int8_t HID_GetIRQOutState 					( void );
 
 int8_t HID_ReadAllMemory 									( uc8 *pCommand, uint8_t *pResponse );
 
-uc8 FieldOffCmd[] = {0x02, 0x02, 0x00, 0x00}; // TODO save the proper config somewhere
-uc8 FieldOnCmd[] = {0x02, 0x02, 0x01, 0x09};
-uint16_t _Timer1;
-uint16_t _Timer2;
+uc8 FieldOffCmd[] = {0x02, 0x02, 0x00, 0x00};
+uc8 FieldOnCmd[] = {0x02, 0x02, 0x01, 0x09}; /* TODO remove this hardcoded value */
+/* The FieldOn configuration is now hardcoded to setup the reader for iso15693, single subcarrier, appending CRC.
+ * Configuration should be preserved even with atomic commands, so HID_Data_Out function should update the
+ * FieldOnCmd array with the latest used configuration.
+ */
 
 
 static void HID_Reset95HF (uc8 *pCommand, uint8_t *pResponse );
@@ -127,6 +128,7 @@ uint8_t 	RcvBuffer 	[HID_MAX_BUFFER_SIZE], //0x3F bytes reserved for data + 1 fo
 			case HID_SPI_SEND_CR95HFCMD : 
 				if (RcvBuffer[HID_OFFSET_CMDCODE] != BAUD_RATE) 
 					drv95HF_SendReceive(&RcvBuffer[HID_OFFSET_CMDCODE], &SendBuffer[HID_OFFSET_CMDCODE]);
+				/* TODO add here switch to save configuration in FieldOnCmd[] when it is sent to the CR95HF */
 			break;
 			/* send customs command	*/
 			case HID_SPI_SEND_DATA:				
@@ -135,14 +137,11 @@ uint8_t 	RcvBuffer 	[HID_MAX_BUFFER_SIZE], //0x3F bytes reserved for data + 1 fo
 			/* send CR95HF command to CR95HF power cycling the PICC */
 			case HID_SPI_ATOMIC_POWER_CYCLE:
 				if (RcvBuffer[HID_OFFSET_ATOMIC_CMDCODE] != BAUD_RATE) {
-					_Timer1 = RcvBuffer[HID_OFFSET_ATOMIC_TIMER1] << 8 + RcvBuffer[HID_OFFSET_ATOMIC_TIMER1 + 1];
-					_Timer2 = RcvBuffer[HID_OFFSET_ATOMIC_TIMER2] << 8 + RcvBuffer[HID_OFFSET_ATOMIC_TIMER2 + 1];
-
-					drv95HF_SendReceive(FieldOffCmd, &SendBuffer[HID_OFFSET_CMDCODE]); // Turn off the field
-					delay_us(_Timer1);
-					drv95HF_SendReceive(FieldOnCmd, &SendBuffer[HID_OFFSET_CMDCODE]); // Turn the field back on
-					delay_us(_Timer2);
-					// WARNING! Now SendBuffer is 4 bytes shorter now!
+					drv95HF_SendReceive(FieldOffCmd, &SendBuffer[HID_OFFSET_CMDCODE]); /* Turn off the field */
+					delay_us((RcvBuffer[HID_OFFSET_ATOMIC_TIMER1] << 8) + RcvBuffer[HID_OFFSET_ATOMIC_TIMER1 + 1]);
+					drv95HF_SendReceive(FieldOnCmd, &SendBuffer[HID_OFFSET_CMDCODE]); /* Turn the field back on */
+					delay_us((RcvBuffer[HID_OFFSET_ATOMIC_TIMER2] << 8) + RcvBuffer[HID_OFFSET_ATOMIC_TIMER2 + 1]);
+					/* WARNING! Now RcvBuffer is 4 bytes shorter! */
 
 					drv95HF_SendReceive(&RcvBuffer[HID_OFFSET_ATOMIC_CMDCODE], &SendBuffer[HID_OFFSET_CMDCODE]);
 				}

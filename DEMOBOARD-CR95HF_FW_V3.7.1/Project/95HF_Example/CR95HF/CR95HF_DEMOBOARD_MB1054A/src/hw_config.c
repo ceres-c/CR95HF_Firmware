@@ -94,7 +94,7 @@ static void TimerDelay_us_Config( void )
 	/* -------------------------------------------------------------------------- 
 	* Delay TIMER configuration (us)
 	* -------------------------------------------------------------------------- */ 
-	TIM_TimeBaseStructure.TIM_Period 			= TIMER_US_DELAY_PERIOD;      
+	TIM_TimeBaseStructure.TIM_Period 			= TIMER_US_DELAY_PERIOD;
 	TIM_TimeBaseStructure.TIM_Prescaler 		= TIMER_US_DELAY_PRESCALER;       
 	TIM_TimeBaseStructure.TIM_ClockDivision 	= TIM_CKD_DIV1;    
 	TIM_TimeBaseStructure.TIM_CounterMode 		= TIM_CounterMode_Up;
@@ -429,8 +429,8 @@ void Timer_Structure_Config( void )
 	/* -------------------------------------------------------------------------- 
 	 * Delay TIMER configuration
 	 * --------------------------------------------------------------------------
-	 * 72 MHz / 72 = 1MHz (1µs)
-	 * 1µs * 1000 + 1µs ~= 1ms	
+	 * 72 MHz / 72 = 1MHz (1ï¿½s)
+	 * 1ï¿½s * 1000 + 1ï¿½s ~= 1ms	
 	 * -------------------------------------------------------------------------- */ 
 	TIM_TimeBaseStructure.TIM_Period 			= TIMER_DELAY_PERIOD;      
 	TIM_TimeBaseStructure.TIM_Prescaler 		= (TIMER_DELAY_PRESCALER-1);       

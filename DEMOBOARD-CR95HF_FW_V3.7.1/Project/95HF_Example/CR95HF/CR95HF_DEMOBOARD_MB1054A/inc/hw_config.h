@@ -93,10 +93,10 @@
 #define TIMER_DELAY_CLOCK											RCC_APB1Periph_TIM2
 																						
 /* -------------------------------------------------------------------------- 
-* Delay TIMER configuration (µs)
+* Delay TIMER configuration (ï¿½s)
 * --------------------------------------------------------------------------- */ 
 #define TIMER_US_DELAY												TIM2
-#define TIMER_US_DELAY_PERIOD									35
+#define TIMER_US_DELAY_PERIOD									70
 #define TIMER_US_DELAY_PRESCALER							1
 #define TIMER_US_DELAY_CLOCK									RCC_APB1Periph_TIM2
 
