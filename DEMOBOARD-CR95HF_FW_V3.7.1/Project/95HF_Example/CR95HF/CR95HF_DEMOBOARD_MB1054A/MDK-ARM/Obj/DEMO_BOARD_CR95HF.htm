@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Obj\DEMO_BOARD_CR95HF.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\DEMO_BOARD_CR95HF.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Tue Jan 14 06:18:23 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Thu Jan 16 08:59:05 2020
 <BR><P>
 <H3>Maximum Stack Usage =       2984 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -803,10 +803,11 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EP3_IN_Callback
 </UL>
 
-<P><STRONG><a name="[aa]"></a>HID_Data_Out</STRONG> (Thumb, 206 bytes, Stack size 600 bytes, usb_hid.o(i.HID_Data_Out))
+<P><STRONG><a name="[aa]"></a>HID_Data_Out</STRONG> (Thumb, 288 bytes, Stack size 600 bytes, usb_hid.o(i.HID_Data_Out))
 <BR><BR>[Stack]<UL><LI>Max Depth = 2976<LI>Call Chain = HID_Data_Out &rArr; HID_SendCustomCommand &rArr; HID_Run15693Anticollision &rArr; ISO15693_RunAntiCollision &rArr; ISO15693_Inventory16Slots &rArr; ISO15693_Inventory &rArr; PCD_SendRecv &rArr; drv95HF_SendReceive &rArr; drv95HF_SendSPICommand &rArr; SPI_SendReceiveBuffer &rArr; SPI_SendReceiveByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv95HF_SendReceive
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigManager_Stop
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPTxStatus
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HID_SendCustomCommand
@@ -1857,6 +1858,7 @@ Global Symbols
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ISO14443B_Init
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ISO14443A_MultiTagHunting
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ISO14443A_Init
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HID_Data_Out
 </UL>
 
 <P><STRONG><a name="[90]"></a>drv95HF_EnableInterrupt</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, drv_95hf.o(i.drv95HF_EnableInterrupt))
